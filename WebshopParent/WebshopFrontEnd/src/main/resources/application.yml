@@ -1,0 +1,20 @@
+server:
+  port: 90
+  #servlet:
+    #context-path: /AdminWebsite2
+spring:
+  datasource:
+    password: '080921'
+    url: jdbc:mysql://localhost:3306/webdb
+    username: root
+    hiraki:
+      minimum-idle: 1
+      maximum-pool-size: 2
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true
+    show-sql: true
