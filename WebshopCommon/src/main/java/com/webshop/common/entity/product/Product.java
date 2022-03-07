@@ -25,10 +25,10 @@ import com.webshop.common.entity.IdBasedEntity;
 @Table(name = "products")
 public class Product extends IdBasedEntity {
 	
-	@Column(unique = true, length = 254, nullable = false)
+	@Column(unique = true, length = 255, nullable = false)
 	private String name;
 	
-	@Column(unique = true, length = 254, nullable = false)
+	@Column(unique = true, length = 255, nullable = false)
 	private String alias;
 	
 	@Column(length = 512, nullable = false, name = "short_description")
